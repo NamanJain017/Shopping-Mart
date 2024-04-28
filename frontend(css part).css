@@ -1,0 +1,261 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align:left;
+    font-size: 24px;
+    font-weight: 2000px;
+    font-style: normal;
+}
+
+.menu {
+  margin-left:20px;
+  text-align:center;
+  width:100px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    color:#ff0000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Featured Products Styles */
+.featured-products {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    /* Display products side by side */
+    transition: transform 0.3s;
+    /* Enable smooth slide transitions */
+}
+
+/* Style for the Previous and Next buttons */
+#prevBtn,
+#nextBtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #555;
+}
+
+.product {
+    text-align: center
+      
+}
+
+.product img {
+  margin:20px;
+  
+    width: 200px;
+    max-width: 200px;
+    height:200px;
+  
+}
+
+.product h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+  display:block;
+   
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.shop-now-button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.information-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.newsletter-signup {
+    margin-top: 20px;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-signup button {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-signup button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .featured-products {
+        padding: 20px;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .newsletter-signup input[type="email"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .product h2 {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .shop-now-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
